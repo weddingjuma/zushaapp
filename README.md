@@ -60,6 +60,7 @@ As it's only a template project, you may want to change its name. For that, you 
 - `bower.json` (name, homepage, author & description)
 - `package.json` (name & description)
 - `ionic.project` (name)
+-  `lib/lb-services` (Api-Url, generated lb-service based on your backend)
 
 ## Used versions
 
