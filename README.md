@@ -47,6 +47,9 @@ Once again, in one command : `ionic platform add android && ionic resources && i
     - [https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin](https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin)
     - [org.apache.cordova.media](https://github.com/apache/cordova-plugin-media)
     - [https://github.com/loicknuchel/cordova-device-accounts](https://github.com/loicknuchel/cordova-device-accounts)
+    
+## Server
+This is an Ionic Mobile client for [loopback-angular-admin](https://github.com/beeman/loopback-angular-admin) using loopback as a backend.
 
 ## Personnalize
 
