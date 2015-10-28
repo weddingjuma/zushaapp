@@ -15,7 +15,7 @@ This application (mostly) follows the [John Papa's style guide](https://github.c
 
 - install nodejs, npm, gulp, bower, cordova, ionic & sass (if not already done)
 - `git clone git@github.com:denzelwamburu/lb-ngIonic.git` : clone this repo
-- `cd lb-ng-ionic` : go to folder
+- `cd lb-ngIonic` : go to folder
 - `bower install` : install app dependencies
 - `npm install` : install build dependencies
 - `ionic setup sass` : use sass
