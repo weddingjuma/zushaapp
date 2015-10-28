@@ -1,9 +1,9 @@
 {
-  "name": "ionic-starter",
-  "description": "Start a new ionic project in seconds !",
+  "name": "lb-ngIonic",
+  "description": "    Start a new ionic project with LoopBack backend in seconds !",
   "version": "0.0.1",
-  "homepage": "https://github.com/loicknuchel/ionic-starter",
-  "authors": [ "Loïc Knuchel <loicknuchel@gmail.com>" ],
+  "homepage": "https://github.com/denzelwamburu/lb-ngIonic",
+  "authors": [ "Denzel Wamburu <denzjoseph@gmail.com>" ],
   "private": "true",
   "main": "www/index.html",
   "keywords": [

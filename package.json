@@ -1,6 +1,6 @@
 {
-  "name": "ionic-starter",
-  "description": "Start a new ionic project in seconds !",
+  "name": "lb-ngIonic",
+  "description": "Start a new ionic project with LoopBack backend in seconds !",
   "version": "0.0.1",
   "dependencies": {
     "gulp": "^3.9.0",

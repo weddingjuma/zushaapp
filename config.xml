@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="fr.loicknuchel.starter.ionic" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>ionic-starter</name>
+<widget id="lb.ngIonic.starter.ionic" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>lb-ngIonic</name>
   <description>
-    Start a new ionic project in seconds !
+    Start a new ionic project with LoopBack backend in seconds !
   </description>
-  <author email="loicknuchel@gmail.com" href="http://loic.knuchel.org/">Loïc Knuchel</author>
+  <author email="denzjoseph@gmail.com" href="http://twitter.com/denzelwamburu">Denzel Wamburu</author>
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="orientation" value="portrait"/>
