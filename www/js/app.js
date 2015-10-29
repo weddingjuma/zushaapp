@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app', ['ionic', 'ngCordova', 'LocalForageModule', 'lbServices', 'ngResource'])
+  angular.module('app', ['ionic', 'ngCordova', 'LocalForageModule', 'lbServices', 'ngResource', 'app.login'])
     .config(configure)
     .run(runBlock);
 

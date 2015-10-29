@@ -15,9 +15,9 @@
     })
     .state('signin', {
       url: '/signin',
-      templateUrl: 'js/authentication/singin.html',
-     // controller: 'LoginCtrl',
-     
+      templateUrl: 'js/authentication/signin.html',
+     controller: 'SigninCtrl'
+
     });
   }
 })();
