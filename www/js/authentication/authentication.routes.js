@@ -12,6 +12,12 @@
       data: {
         restrictAccess: ['notLogged']
       }
+    })
+    .state('signin', {
+      url: '/signin',
+      templateUrl: 'js/authentication/singin.html',
+     // controller: 'LoginCtrl',
+     
     });
   }
 })();
