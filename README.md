@@ -3,7 +3,9 @@
 [![Dependency Status](https://david-dm.org/loicknuchel/ionic-starter.svg)](https://david-dm.org/loicknuchel/ionic-starter)
 [![devDependency Status](https://david-dm.org/loicknuchel/ionic-starter/dev-status.svg)](https://david-dm.org/loicknuchel/ionic-starter#info=devDependencies)
 
-This project aims to let you start a new app as fast as possible.
+This project aims to let you start a new app as fast as possible using Loopback-angular-admin backend.
+
+This is a continuation of the [ionic starter](https://github.com/loicknuchel/ionic-starter) 
 
 Just clone it and you are ready to do ! Many boilerplate code is already written and most usefull libs are included. I'm trying to follow best practices with Angular & Ionic so it could be a good kick start :)
 
@@ -50,6 +52,8 @@ Once again, in one command : `ionic platform add android && ionic resources && i
     
 ## Server
 This is an Ionic Mobile client for [loopback-angular-admin](https://github.com/beeman/loopback-angular-admin) using loopback as a backend.
+
+Set up the server or clone the [repo](https://github.com/beeman/loopback-angular-admin).
 
 ## Personnalize
 
