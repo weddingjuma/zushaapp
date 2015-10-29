@@ -1,5 +1,5 @@
 angular.module('app.login', ['lbServices', 'ionic'])
-    .controller('SigninCtrl', function ($scope, User, $location, $ionicPopup) {
+    .controller('SigninCtrl', function ($scope, User, $location, $ionicPopup, $ionicLoading) {
         if (User.getCachedCurrent()!==null) {
            $location.path('app/tabs/twitts');
         }
@@ -10,6 +10,16 @@ angular.module('app.login', ['lbServices', 'ionic'])
          */
         $scope.credentials = {};
 
+       // Add Loading while it sends data and waits
+       $scope.showAlert = function(title, errorMsg) {
+           var alertPopup = $ionicPopup.alert({
+               title: title,
+               template: errorMsg
+           });
+           alertPopup.then(function(res) {
+               console.log($scope.loginError);
+           });
+       };
         /**
          * @name showAlert()
          * @param {string} title
