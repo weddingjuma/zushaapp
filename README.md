@@ -1,4 +1,4 @@
-# Ionic Starter
+# lb-ngIonic
 
 [![Dependency Status](https://david-dm.org/loicknuchel/ionic-starter.svg)](https://david-dm.org/loicknuchel/ionic-starter)
 [![devDependency Status](https://david-dm.org/loicknuchel/ionic-starter/dev-status.svg)](https://david-dm.org/loicknuchel/ionic-starter#info=devDependencies)
@@ -21,7 +21,7 @@ This application (mostly) follows the [John Papa's style guide](https://github.c
 - `ionic setup sass` : use sass
 - `ionic serve` : start the app on your browser
 
-For the impatients, you can run all these commands in one time : `git clone git@github.com:denzelwamburu/lb-ngIonic.git && cd lb-ng-ionic && bower install && npm install && ionic setup sass && ionic serve`
+For the impatients, you can run all these commands in one time : `git clone git@github.com:denzelwamburu/lb-ngIonic.git && cd lb-ngIonic && bower install && npm install && ionic setup sass && ionic serve`
 
 To run the app on your android device :
 
@@ -64,9 +64,9 @@ As it's only a template project, you may want to change its name. For that, you 
 
 ## Used versions
 
-- Node v0.10.26 (`node -v`)
-- Cordova 4.2.0 (`cordova -version`)
-- Bower 1.3.12 (`bower -v`)
+- Node v4.2.1 (`node -v`)
+- Cordova 5.3.3 (`cordova -version`)
+- Bower 1.6.3 (`bower -v`)
 - Angular 1.3.13 (see bower.json)
 - Ionic 1.0.0-rc.5 (see bower.json)
 
@@ -119,3 +119,7 @@ see http://stackoverflow.com/questions/26271313/tel-sms-and-mailto-no-longer-wor
     - http://forum.ionicframework.com/t/ionic-and-karma-unittest/8799
 - Data
     - PouchDB (http://devgirl.org/2014/12/30/sync-data-using-pouchdb-in-your-ionic-framework-app/)
+
+## Credits
+
+- Ionic Starter]
