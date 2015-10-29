@@ -11,15 +11,19 @@ angular.module('app.login', ['lbServices', 'ionic'])
         $scope.credentials = {};
 
        // Add Loading while it sends data and waits
-       $scope.showAlert = function(title, errorMsg) {
-           var alertPopup = $ionicPopup.alert({
-               title: title,
-               template: errorMsg
-           });
-           alertPopup.then(function(res) {
-               console.log($scope.loginError);
-           });
-       };
+       /*
+         * Show loading while data is being processed
+         * Then hide loading when feedback is gotten
+         */
+        $scope.show = function(message) {
+            $ionicLoading.show({
+                template: '<div class="ionic loader"><svg class="circular"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div> <div>Working On it...</div>'
+            });
+        };
+        //Hide function
+        $scope.hide = function() {
+            $ionicLoading.hide();
+        };
         /**
          * @name showAlert()
          * @param {string} title
