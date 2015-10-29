@@ -126,4 +126,5 @@ see http://stackoverflow.com/questions/26271313/tel-sms-and-mailto-no-longer-wor
 
 ## Credits
 
-- Ionic Starter]
+- [Ionic Starter](https://github.com/loicknuchel/ionic-starter) by [loicknuchel](https://github.com/loicknuchel).
+- 
