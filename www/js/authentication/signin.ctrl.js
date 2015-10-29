@@ -1,7 +1,7 @@
-angular.module('looper.login', ['lbServices', 'ionic'])
+angular.module('app.login', ['lbServices', 'ionic'])
     .controller('LoginCtrl', function ($scope, User, $location, $ionicPopup) {
         if (User.getCachedCurrent()!==null) {
-           $location.path('tab/home');
+           $location.path('app/tabs/twitts');
         }
         /**
          * Currently you need to initialiate the variables
@@ -35,7 +35,7 @@ angular.module('looper.login', ['lbServices', 'ionic'])
         $scope.login = function () {
             $scope.loginResult = User.login({include: 'user', rememberMe: true}, $scope.credentials,
                 function () {
-                    var next = $location.nextAfterLogin || 'tab/home';
+                    var next = $location.nextAfterLogin || 'app/tabs/twitts';
                     $location.nextAfterLogin = null;
                     $location.path(next);
                 },
