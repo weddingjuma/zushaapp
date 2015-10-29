@@ -59,6 +59,7 @@ angular.module('app.login', ['lbServices', 'ionic'])
                     $scope.hide();
                 },
                 function (err) {
+                    $scope.hide();
                     $scope.loginError = err;
                     $scope.showAlert(err.statusText, err.data.error.message);
                 }
