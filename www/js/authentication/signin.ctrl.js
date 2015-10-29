@@ -47,11 +47,16 @@ angular.module('app.login', ['lbServices', 'ionic'])
          * sign-in function for users which created an account
          */
         $scope.login = function () {
-            $scope.loginResult = User.login({include: 'user', rememberMe: true}, $scope.credentials,
+          $scope.show();
+            $scope.loginResult = User.login({
+              include: 'user', rememberMe: true
+            },
+            $scope.credentials,
                 function () {
                     var next = $location.nextAfterLogin || 'app/tabs/twitts';
                     $location.nextAfterLogin = null;
                     $location.path(next);
+                    $scope.hide();
                 },
                 function (err) {
                     $scope.loginError = err;
