@@ -5,7 +5,7 @@
 
 This project aims to let you start a new app as fast as possible using Loopback-angular-admin backend.
 
-This is a continuation of the [ionic starter](https://github.com/loicknuchel/ionic-starter) 
+This is a continuation of the [ionic starter](https://github.com/loicknuchel/ionic-starter) and
 
 Just clone it and you are ready to do ! Many boilerplate code is already written and most usefull libs are included. I'm trying to follow best practices with Angular & Ionic so it could be a good kick start :)
 
@@ -15,7 +15,7 @@ This application (mostly) follows the [John Papa's style guide](https://github.c
 
 ## Getting started
 
-- install nodejs, npm, gulp, bower, cordova, ionic & sass (if not already done)
+- Install nodejs, npm, gulp, bower, cordova, ionic & sass (if not already done)
 - `git clone git@github.com:denzelwamburu/lb-ngIonic.git` : clone this repo
 - `cd lb-ngIonic` : go to folder
 - `bower install` : install app dependencies
@@ -33,6 +33,11 @@ To run the app on your android device :
 
 Once again, in one command : `ionic platform add android && ionic resources && ionic run android`
 
+Before starting, makes sure you've followed [Getting Started with LoopBack](http://docs.strongloop.com/display/LB/Getting+started+with+LoopBack) to install Node and LoopBack.
+In adittion, you will need a basic understanding of:
+ - [AngularJs](https://angularjs.org/)
+ - Ionic [CSS](http://ionicframework.com/docs/components/) and [Javascript](http://ionicframework.com/docs/api/) components  
+
 ## Main features
 
 - User authentication
@@ -49,7 +54,7 @@ Once again, in one command : `ionic platform add android && ionic resources && i
     - [https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin](https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin)
     - [org.apache.cordova.media](https://github.com/apache/cordova-plugin-media)
     - [https://github.com/loicknuchel/cordova-device-accounts](https://github.com/loicknuchel/cordova-device-accounts)
-    
+
 ## Server
 This is an Ionic Mobile client for [loopback-angular-admin](https://github.com/beeman/loopback-angular-admin) using loopback as a backend.
 
@@ -78,7 +83,7 @@ As it's only a template project, you may want to change its name. For that, you 
 
 - Mettre en place des analytices (segment.io, google analytics...)
 - tell Ionic CLI to not add empty cordova.js :(
-- improve _log.js : get device uuid instead of userId...
+- improve log.js : get device uuid instead of userId...
 - Geolocation plugin : check if geolocation is enabled
 - add tests & comments (plugins services & mocks, utils services...) (http://forum.ionicframework.com/t/unit-tests-for-ionic/3711/5)
 - add standard usefull plugins :
@@ -127,4 +132,5 @@ see http://stackoverflow.com/questions/26271313/tel-sms-and-mailto-no-longer-wor
 ## Credits
 
 - [Ionic Starter](https://github.com/loicknuchel/ionic-starter) by [loicknuchel](https://github.com/loicknuchel).
-- 
+- [loopback-angular-admin](https://github.com/beeman/loopback-angular-admin)
+- [loopback-example-ionic](https://github.com/belibasakis/loopback-example-ionic)
