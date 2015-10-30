@@ -18,6 +18,11 @@
       templateUrl: 'js/authentication/signin.html',
      controller: 'SigninCtrl'
 
+    })
+    .state('register', {
+      url: '/register',
+      templateUrl: 'js/authentication/register.html',
+     controller: 'RegisterCtrl'
     });
   }
 })();
