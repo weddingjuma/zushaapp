@@ -1,5 +1,5 @@
 angular.module('app.register', ['lbServices', 'ionic'])
-    .controller('RegisterCtrl', function ($scope, User, Avatar, $ionicPopup, $location, $ionicLoading) {
+    .controller('RegisterCtrl', function ($scope, User, $ionicPopup, $location, $ionicLoading) {
 
      /*
          * Show loading while data is being processed
@@ -36,8 +36,7 @@ angular.module('app.register', ['lbServices', 'ionic'])
            $scope.avatar = {};
 
 
-        $scope.registration = {};
-        $scope.avatar = {};
+      
 
         /**
          * Redirect user to the app if already logged in
