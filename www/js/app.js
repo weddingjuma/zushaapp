@@ -16,7 +16,7 @@
 
     if (window.StatusBar) {
         StatusBar.styleDefault();
-    //    StatusBar.styleLightContent(); //status bar will have white text and icons
+    //    StatusBar.styleLightContent();
     }
 
 })
@@ -33,7 +33,19 @@
     }]);
 
     // configure $http requests according to authentication
-    $httpProvider.interceptors.push('AuthInterceptor');
+//     $httpProvider.interceptors.push('AuthInterceptor');
+    $httpProvider.interceptors.push(function($q, $location) {
+    return {
+        responseError: function(rejection) {
+            console.log("Redirect");
+            if (rejection.status == 401 && $location.path() !== '/signin' && $location.path() !== '/register') {
+                $location.nextAfterLogin = $location.path();
+                $location.path('#/app/tabs/twitts');
+            }
+            return $q.reject(rejection);
+        }
+    };
+});
   }
 
   function runBlock($rootScope, $state, $log, AuthSrv, UserSrv, PushPlugin, ToastPlugin, Config){
