@@ -2,7 +2,24 @@
   'use strict';
   angular.module('app', ['ionic', 'ngCordova', 'LocalForageModule', 'lbServices', 'ngResource', 'app.login', 'app.register'])
     .config(configure)
-    .run(runBlock);
+//    .run(runBlock);
+.run(function(User, $ionicPlatform, $rootScope, $location, $ionicPopup) {
+    //Check if User is authenticated
+    if (User.getCachedCurrent() == null) {
+        User.getCurrent();
+    }
+    // In Ionic the accessory bar is hidden by default. Do not hide the keyboard accessory bar for this app
+    // so the drop-down form input can be used properly.
+    if (window.cordova && window.cordova.plugins.Keyboard) {
+        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
+    }
+
+    if (window.StatusBar) {
+        StatusBar.styleDefault();
+    //    StatusBar.styleLightContent(); //status bar will have white text and icons
+    }
+
+})
 
   configure.$inject = ['$urlRouterProvider', '$provide', '$httpProvider'];
   function configure($urlRouterProvider, $provide, $httpProvider){
