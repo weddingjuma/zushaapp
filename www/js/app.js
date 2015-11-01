@@ -33,7 +33,7 @@
     }]);
 
     // configure $http requests according to authentication
-//     $httpProvider.interceptors.push('AuthInterceptor');
+//  $httpProvider.interceptors.push('AuthInterceptor');
     $httpProvider.interceptors.push(function($q, $location) {
     return {
         responseError: function(rejection) {
