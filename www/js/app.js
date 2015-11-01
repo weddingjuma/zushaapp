@@ -52,7 +52,6 @@
     checkRouteRights();
     setupPushNotifications();
 
-    ////////////////
 
     function checkRouteRights(){
       $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){
