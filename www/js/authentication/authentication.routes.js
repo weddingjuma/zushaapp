@@ -23,6 +23,11 @@
       url: '/register',
       templateUrl: 'js/authentication/register.html',
      controller: 'RegisterCtrl'
+    })
+    .state('profile', {
+      url: '/profile',
+      templateUrl: 'js/authentication/profile/account.html',
+     controller: 'AccountCtrl'
     });
   }
 })();
