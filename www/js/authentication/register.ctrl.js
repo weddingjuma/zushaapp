@@ -32,12 +32,12 @@ angular.module('app.register', ['lbServices', 'ionic'])
             };
 
 
-           $scope.registration = {};
-           $scope.avatar = {};
+  //         $scope.registration = {};
+  //         $scope.avatar = {};
 
 
-        $scope.registration = {};
-        $scope.avatar = {};
+    //    $scope.registration = {};
+  //      $scope.avatar = {};
 
         /**
          * Redirect user to the app if already logged in
@@ -55,16 +55,16 @@ angular.module('app.register', ['lbServices', 'ionic'])
                         $scope.show();
 
             $scope.registration.created = new Date().toJSON();
-            $scope.registration.avatar = "img/avatar/" + $scope.avatar.id + ".png";
-            $scope.avatar = {}; //Reset
+          //  $scope.registration.avatar = "img/avatar/" + $scope.avatar.id + ".png";
+        //    $scope.avatar = {}; //Reset
             $scope.user = User.create($scope.registration)
-                .$promise
-                .then(function (res) {
-                    console.log(res.avatar);
+        //        .$promise
+        //        .then(function (res) {
+        //            console.log(res.avatar);
                     /**
                      * Save avatar
                      */
-                    Avatar.create({url: res.avatar, ownerId: res.id})
+        //            Avatar.create({url: res.avatar, ownerId: res.id})
                         .$promise
                         .then(function (res) {
                             $scope.hide();
@@ -82,16 +82,15 @@ angular.module('app.register', ['lbServices', 'ionic'])
 
                                     $scope.loginError = err;
                                     $scope.showAlert(err.statusText, err.data.error.message);
-                                })
+                                }),
                         }, function (err) {
                             console.log(err);
-                        })
-                }, function (err) {
-                  $scope.hide();
+
+          //        $scope.hide();
 
                     $scope.registerError = err;
                     $scope.showAlert(err.statusText, err.data.error.message);
-                });
+                }),
         };
 
         /**
