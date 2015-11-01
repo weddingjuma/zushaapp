@@ -1,5 +1,5 @@
 angular.module('app.register', ['lbServices', 'ionic'])
-    .controller('RegisterCtrl', function ($scope, User, $ionicPopup, $location, $ionicLoading) {
+    .controller('RegisterCtrl', function ($scope, User, Avatar, $ionicPopup, $location, $ionicLoading) {
 
      /*
          * Show loading while data is being processed
@@ -33,10 +33,11 @@ angular.module('app.register', ['lbServices', 'ionic'])
 
 
            $scope.registration = {};
-          // $scope.avatar = {};
+           $scope.avatar = {};
 
 
-
+        $scope.registration = {};
+        $scope.avatar = {};
 
         /**
          * Redirect user to the app if already logged in
@@ -54,8 +55,8 @@ angular.module('app.register', ['lbServices', 'ionic'])
                         $scope.show();
 
             $scope.registration.created = new Date().toJSON();
-  //          $scope.registration.avatar = "img/avatar/" + $scope.avatar.id + ".png";
-    //        $scope.avatar = {}; //Reset
+            $scope.registration.avatar = "img/avatar/" + $scope.avatar.id + ".png";
+            $scope.avatar = {}; //Reset
             $scope.user = User.create($scope.registration)
                 .$promise
                 .then(function (res) {
@@ -63,10 +64,7 @@ angular.module('app.register', ['lbServices', 'ionic'])
                     /**
                      * Save avatar
                      */
-                    Avatar.create({
-                      url: res.avatar,
-                       ownerId: res.id
-                     })
+                    Avatar.create({url: res.avatar, ownerId: res.id})
                         .$promise
                         .then(function (res) {
                             $scope.hide();
@@ -76,11 +74,11 @@ angular.module('app.register', ['lbServices', 'ionic'])
                             User.login({include: 'user', rememberMe: true}, $scope.registration)
                                 .$promise
                                 .then(function (res) {
-                                    $location.path('app/tabs/twitts')
+                                    $location.path('tab/home')
                                                             $scope.hide();
 
                                 }, function (err) {
-                                $scope.hide();
+                                                        $scope.hide();
 
                                     $scope.loginError = err;
                                     $scope.showAlert(err.statusText, err.data.error.message);
@@ -112,4 +110,17 @@ angular.module('app.register', ['lbServices', 'ionic'])
                 console.log($scope.loginError);
             });
         };
+
+/**
+        // Set the default value of inputType
+        $scope.inputType = 'password';
+
+        // Hide & show password function
+        $scope.hideShowPassword = function(){
+          if ($scope.inputType == 'password')
+            $scope.inputType = 'text';
+          else
+            $scope.inputType = 'password';
+        };
+        **/
     });
