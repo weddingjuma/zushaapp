@@ -43,7 +43,7 @@ angular.module('app.register', ['lbServices', 'ionic'])
          * Redirect user to the app if already logged in
          */
         if (User.getCachedCurrent()!==null) {
-            $location.path('tab/home');
+            $location.path('app/tabs/twitts');
         }
 
         /**
@@ -55,16 +55,8 @@ angular.module('app.register', ['lbServices', 'ionic'])
                         $scope.show();
 
             $scope.registration.created = new Date().toJSON();
-//            $scope.registration.avatar = "img/avatar/" + $scope.avatar.id + ".png";
-//            $scope.avatar = {}; //Reset
             $scope.user = User.create($scope.registration)
-          //      .$promise
-          //      .then(function (res) {
-          //          console.log(res.avatar);
-                    /**
-                     * Save avatar
-                     */
-          //          Avatar.create({url: res.avatar, ownerId: res.id})
+
                         .$promise
                         .then(function (res) {
                             $scope.hide();
@@ -74,7 +66,7 @@ angular.module('app.register', ['lbServices', 'ionic'])
                             User.login({include: 'user', rememberMe: true}, $scope.registration)
                                 .$promise
                                 .then(function (res) {
-                                    $location.path('tab/home')
+                                    $location.path('app/tabs/twitts')
                                                             $scope.hide();
 
                                 }, function (err) {
@@ -111,16 +103,5 @@ angular.module('app.register', ['lbServices', 'ionic'])
             });
         };
 
-/**
-        // Set the default value of inputType
-        $scope.inputType = 'password';
 
-        // Hide & show password function
-        $scope.hideShowPassword = function(){
-          if ($scope.inputType == 'password')
-            $scope.inputType = 'text';
-          else
-            $scope.inputType = 'password';
-        };
-        **/
     });
