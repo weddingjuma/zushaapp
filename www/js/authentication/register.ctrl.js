@@ -77,6 +77,8 @@ angular.module('app.register', ['lbServices', 'ionic'])
                                 })
                         }, function (err) {
                             console.log(err);
+                            $scope.registerError = err;
+                            $scope.showAlert(err.statusText, err.data.error.message);
                         })
             //    }, function (err) {
             //      $scope.hide();
