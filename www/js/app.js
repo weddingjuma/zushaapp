@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app', ['ionic', 'ngCordova', 'LocalForageModule', 'lbServices', 'ngResource', 'app.login', 'app.register'])
+  angular.module('app', ['ionic', 'ngCordova', 'LocalForageModule', 'lbServices', 'ngResource', 'app.login', 'app.register', 'app.account'])
     .config(configure)
 //    .run(runBlock);
 .run(function(User, $ionicPlatform, $rootScope, $location, $ionicPopup) {
