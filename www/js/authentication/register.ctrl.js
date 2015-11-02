@@ -52,6 +52,7 @@ angular.module('app.register', ['lbServices', 'ionic'])
          * register a new user and login
          */
         $scope.register = function () {
+                //Display loading template
                         $scope.show();
 
             $scope.registration.created = new Date().toJSON();
