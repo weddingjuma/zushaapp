@@ -1,7 +1,6 @@
-angular.module('Pagesrv', ['ngResource', ''])
+angular.module('PageSrv', ['ngResource', 'PagesCtrl'])
 
-//Factory for Articles
-//http://104.131.160.166:3000
+//Factory for Pages
 .factory('Pages', function ($resource) {
     return $resource(Config.backendUrl+ '/api/pages/:pageId');
 })
