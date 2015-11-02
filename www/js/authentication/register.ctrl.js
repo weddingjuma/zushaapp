@@ -76,6 +76,7 @@ angular.module('app.register', ['lbServices', 'ionic'])
                                     $scope.showAlert(err.statusText, err.data.error.message);
                                 })
                         }, function (err) {
+                            $scope.hide();
                             console.log(err);
                             $scope.registerError = err;
                             $scope.showAlert(err.statusText, err.data.error.message);
