@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app', ['PageSrv'])
     .controller('PagesCtrl', function($scope, Page){
       $scope.pages = Page.query();
     })
