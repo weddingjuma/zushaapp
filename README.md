@@ -129,6 +129,11 @@ see http://stackoverflow.com/questions/26271313/tel-sms-and-mailto-no-longer-wor
 - Data
     - PouchDB (http://devgirl.org/2014/12/30/sync-data-using-pouchdb-in-your-ionic-framework-app/)
 
+## Contributing
+- Feel Free to Open an issue and ask any questions. You can email me denzjoseph@gmail.com
+- Be awesome and make a pull request.
+- Be Super awesome to Star This project.
+- Checkout The [CONTRIBUTING](https://github.com/denzelwamburu/lb-ngIonic/blob/master/CONTRIBUTING.md) Documentation.
 ## Credits
 
 - [Ionic Starter](https://github.com/loicknuchel/ionic-starter) by [loicknuchel](https://github.com/loicknuchel).
