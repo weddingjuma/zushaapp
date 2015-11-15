@@ -1,14 +1,11 @@
 <ion-view title="Account" class="ionic">
   <div class="bar bar-header bar-positive">
       <button class="button button-icon icon ion-person-add flat"></button>
-      <button class="button button-icon icon  ion-log-out flat pull-right"></button>
+      <button class="button button-icon icon  ion-log-out flat pull-right" ng-click="logout()"></button>
   </div>
-    <ion-content>
+    <ion-content class="content has-header">
 
-  <div class="ionic">
 
-      <button class="button button-fab button-fab-bottom-right button-assertive icon ion-chatbubbles waves-effect waves-button waves-light"></button>
-      <div class="content has-header">
           <div class="hero has-mask " style="background-image: url('http://ionicframework.com/img/docs/winston.jpg');">
               <div class="content">
                   <div class="avatar" style="background-image: url('../img/lil-jon.jpg');"></div>
@@ -36,8 +33,6 @@
                   <p>#whitemamba</p>
               </a>
           </div>
-      </div>
-  </div>
 
 
     </ion-content>
