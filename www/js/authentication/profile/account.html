@@ -10,15 +10,15 @@
 
 
 </ion-nav-bar>
-    <ion-content class="content">
+    <ion-content class="content has-header">
 
 
-          <div class="hero has-mask sub-header" style="background-image: url('http://ionicframework.com/img/docs/winston.jpg');">
+          <div class="hero has-mask " style="background-image: url('http://ionicframework.com/img/docs/winston.jpg');">
               <div class="content">
-                  <div class="avatar" style="background-image: url('http://ionicframework.com/img/docs/slimer.jpg');"></div>
-                  <h3><a class="light">Wamburu</a></h3>
-                  <h4>denzjoseph@gmail.com</h4>
-                  <p>1</p>
+                  <div class="avatar" style="background-image: url('http://ionicframework.com/img/docs/barrett.jpg');"></div>
+                  <h3><a class="light">{{currentUser.username}}</a></h3>
+                  <h4>{{currentUser.email}}</h4>
+                  <p>User ID: {{currentUser.id}} </p>
 
               </div>
           </div>
