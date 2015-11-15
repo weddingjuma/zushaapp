@@ -1,20 +1,21 @@
 <ion-view title="Account" class="ionic">
-
+  <div class="bar bar-header bar-positive">
+      <button class="button button-icon icon ion-person-add flat"></button>
+      <button class="button button-icon icon  ion-log-out flat pull-right"></button>
+  </div>
     <ion-content>
 
   <div class="ionic">
-      <div class="bar bar-header bar-positive">
-          <button class="button button-icon icon ion-person-add flat"></button>
-          <button class="button button-icon icon ion-android-search flat pull-right"></button>
-          <h1 class="title fab-left">Profile</h1>
-      </div>
+
       <button class="button button-fab button-fab-bottom-right button-assertive icon ion-chatbubbles waves-effect waves-button waves-light"></button>
       <div class="content has-header">
-          <div class="hero has-mask " style="background-image: url('../img/profile-bg.jpg');">
+          <div class="hero has-mask " style="background-image: url('http://ionicframework.com/img/docs/winston.jpg');">
               <div class="content">
                   <div class="avatar" style="background-image: url('../img/lil-jon.jpg');"></div>
-                  <h3><a class="light">Lil Jon</a></h3>
-                  <h4>English Teacher</h4>
+                  <h3><a class="light">{{currentUser.username}}</a></h3>
+                  <h4>{{currentUser.email}}</h4>
+                  <p>User ID: {{currentUser.id}} </p>
+
               </div>
           </div>
           <div class="button-bar">
@@ -25,27 +26,18 @@
           <h4 class="positive content padding double-padding-x">Following</h4>
           <div class="list animate-fade-slide-in-right">
               <a style="transition-delay: 0.2s;" class="item item-avatar waves-effect waves-button waves-dark in done">
-                  <span class="avatar" style="background-image: url('../img/kobe.jpg');"></span>
+                  <span class="avatar" style="background-image: url('http://ionicframework.com/img/docs/winston.jpg');"></span>
                   <h2>Kobe Bryant</h2>
                   <p>81 pts #toolongago</p>
               </a>
               <a style="transition-delay: 0.23s;" class="item item-avatar waves-effect waves-button waves-dark in">
-                  <span class="avatar" style="background-image: url('../img/white-mamba.jpg');"></span>
+                  <span class="avatar" style="background-image: url('http://ionicframework.com/img/docs/venkman.jpg');"></span>
                   <h2>Brian Scalabrine</h2>
                   <p>#whitemamba</p>
               </a>
           </div>
       </div>
   </div>
-  <script src="../../../../bower_components/js/waves.min.js"></script>
-  <script src="../js/material-ionic.js"></script>
-
-
-
-
-        <button class="button button-block button-energized icon ion-log-out" ng-click="logout()">
-            Logout
-        </button>
 
 
     </ion-content>
