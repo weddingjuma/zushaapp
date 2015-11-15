@@ -5,14 +5,14 @@
 
   function configure($stateProvider){
     $stateProvider
-      .state('login', {
+  /**    .state('login', {
       url: '/login',
       templateUrl: 'js/authentication/login.html',
       controller: 'LoginCtrl',
       data: {
         restrictAccess: ['notLogged']
       }
-    })
+    }) **/
     .state('signin', {
       url: '/signin',
       templateUrl: 'js/authentication/signin.html',
