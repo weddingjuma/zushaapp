@@ -8,7 +8,7 @@ angular.module('app.register', ['lbServices', 'ionic'])
 
         $scope.show = function(message) {
             $ionicLoading.show({
-                template: 'Registering, please wait...'
+                template: '<div class="ionic loader"><svg class="circular"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div> <div>Registering, please wait......</div>'
             });
         };
 

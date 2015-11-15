@@ -17,7 +17,7 @@ angular.module('app.login', ['lbServices', 'ionic'])
          */
         $scope.show = function(message) {
             $ionicLoading.show({
-                template: 'Signing In...'
+                template: '<div class="ionic loader"><svg class="circular"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div> <div>Signin In...</div>'
             });
         };
         //Hide function
