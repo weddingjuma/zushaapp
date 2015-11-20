@@ -3,7 +3,9 @@
 [![Dependency Status](https://david-dm.org/loicknuchel/ionic-starter.svg)](https://david-dm.org/loicknuchel/ionic-starter)
 [![devDependency Status](https://david-dm.org/loicknuchel/ionic-starter/dev-status.svg)](https://david-dm.org/loicknuchel/ionic-starter#info=devDependencies)
 
-This project aims to let you start a new app as fast as possible using Loopback-angular-admin backend.
+Kickstart Your Ionic Project with Nodejs LoopBack backend in seconds !
+
+This project aims to let you start a new Hybrid cross platform app as fast as possible using Loopback-angular-admin backend.
 
 This is a continuation of the [ionic starter](https://github.com/loicknuchel/ionic-starter) and
 
