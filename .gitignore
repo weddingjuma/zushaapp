@@ -1,4 +1,5 @@
 .gitignore
+www/lib/lb-services.js
 node_modules
 platforms/
 plugins/
