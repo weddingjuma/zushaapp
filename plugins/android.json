@@ -20,6 +20,24 @@
     "installed_plugins": {
         "cordova-plugin-x-toast": {
             "PACKAGE_NAME": "lb.ngIonic.starter.ionic"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "lb.ngIonic.starter.ionic"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "lb.ngIonic.starter.ionic"
+        },
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "lb.ngIonic.starter.ionic"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "lb.ngIonic.starter.ionic"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "lb.ngIonic.starter.ionic"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "lb.ngIonic.starter.ionic"
         }
     },
     "dependent_plugins": {}
