@@ -1,9 +1,8 @@
 {
-    "cordova-plugin-x-toast": {
+    "cordova-plugin-statusbar": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-statusbar"
         },
         "is_top_level": true,
         "variables": {}
@@ -16,6 +15,14 @@
         "is_top_level": true,
         "variables": {}
     },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-splashscreen"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
     "cordova-plugin-console": {
         "source": {
             "type": "registry",
@@ -24,34 +31,26 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.ionic.keyboard": {
-        "source": {
-            "type": "registry",
-            "id": "com.ionic.keyboard"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "cordova-plugin-dialogs": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-dialogs"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "cordova-plugin-inappbrowser": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-inappbrowser"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-whitelist": {
         "source": {
             "type": "registry",
             "id": "cordova-plugin-whitelist"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-x-toast": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-x-toast"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-sqlite-storage": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-sqlite-storage"
         },
         "is_top_level": true,
         "variables": {}
