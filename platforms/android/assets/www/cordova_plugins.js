@@ -9,6 +9,37 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+        "id": "cordova-plugin-whitelist.whitelist",
+        "pluginId": "cordova-plugin-whitelist",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "pluginId": "cordova-plugin-splashscreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "id": "cordova-plugin-statusbar.statusbar",
+        "pluginId": "cordova-plugin-statusbar",
+        "clobbers": [
+            "window.StatusBar"
+        ]
+    },
+    {
+        "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+        "id": "ionic-plugin-keyboard.keyboard",
+        "pluginId": "ionic-plugin-keyboard",
+        "clobbers": [
+            "cordova.plugins.Keyboard"
+        ],
+        "runs": true
+    },
+    {
         "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
         "id": "cordova-plugin-x-toast.Toast",
         "pluginId": "cordova-plugin-x-toast",
@@ -22,12 +53,6 @@ module.exports = [
         "pluginId": "cordova-plugin-x-toast"
     },
     {
-        "file": "plugins/cordova-plugin-whitelist/whitelist.js",
-        "id": "cordova-plugin-whitelist.whitelist",
-        "pluginId": "cordova-plugin-whitelist",
-        "runs": true
-    },
-    {
         "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
         "id": "cordova-sqlite-storage.SQLitePlugin",
         "pluginId": "cordova-sqlite-storage",
@@ -36,11 +61,12 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-        "id": "cordova-plugin-statusbar.statusbar",
-        "pluginId": "cordova-plugin-statusbar",
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "pluginId": "cordova-plugin-inappbrowser",
         "clobbers": [
-            "window.StatusBar"
+            "cordova.InAppBrowser.open",
+            "window.open"
         ]
     }
 ];
@@ -48,11 +74,14 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-device": "1.1.0",
-    "cordova-plugin-x-toast": "2.3.1",
-    "cordova-plugin-whitelist": "1.2.0",
-    "cordova-sqlite-storage": "0.7.14",
     "cordova-plugin-console": "1.0.2",
-    "cordova-plugin-statusbar": "2.0.0"
+    "cordova-plugin-whitelist": "1.2.0",
+    "cordova-plugin-splashscreen": "3.0.0",
+    "cordova-plugin-statusbar": "2.0.0",
+    "ionic-plugin-keyboard": "1.0.8",
+    "cordova-plugin-x-toast": "2.3.1",
+    "cordova-sqlite-storage": "0.7.14",
+    "cordova-plugin-inappbrowser": "1.1.1"
 }
 // BOTTOM OF METADATA
 });

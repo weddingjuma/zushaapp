@@ -1,6 +1,7 @@
 {
   "name": "lb-ngIonic",
-  "description": "Start a new ionic project in seconds !",
+  "version": "0.0.1",
+  "description": "Kickstart Your Ionic Project with Nodejs LoopBack backend in seconds !",
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4",

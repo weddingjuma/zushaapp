@@ -1,6 +1,6 @@
 {
-  "name": "lb-ngIonic",
-  "app_id": "bb999f74",
+  "name": "ionic-starter",
+  "app_id": "",
   "gulpStartupTasks": [
     "sass",
     "watch"
