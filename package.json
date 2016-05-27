@@ -1,7 +1,7 @@
 {
-  "name": "lb-ngIonic",
+  "name": "ZushaApp",
   "version": "0.0.1",
-  "description": "Kickstart Your Ionic Project with Nodejs LoopBack backend in seconds !",
+  "description": "Report and Track Any Overspeading Car on Kenyan Roads; The NTSA Way",
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4",
