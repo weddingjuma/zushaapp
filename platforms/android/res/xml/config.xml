@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="fr.loicknuchel.starter.ionic" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <preference name="loglevel" value="DEBUG" />
+<widget id="lb.ngIonic.starter.ionic" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
@@ -29,6 +28,22 @@
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
+    <name>ionic-starter</name>
+    <description>Start a new ionic project in seconds !</description>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <name>Zusha</name>
+    <description>Report and Track Any Overspeading Car on Kenyan Roads; The NTSA Way</description>
+    <author email="denzjoseph@gmail.com" href="http://example.com.com/">Wamburu</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <access launch-external="yes" origin="tel:*" />
+    <access launch-external="yes" origin="mailto:*" />
+    <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
     <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
@@ -47,13 +62,7 @@
     <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
     <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
     <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
-    <name>ionic-starter</name>
-    <description>Start a new ionic project in seconds !</description>
-    <author email="you@example.com" href="http://example.com.com/">Your Name Here</author>
-    <content src="index.html" />
-    <access origin="*" />
-    <access launch-external="yes" origin="tel:*" />
-    <access launch-external="yes" origin="mailto:*" />
+    <preference name="loglevel" value="DEBUG" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
@@ -61,5 +70,4 @@
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
-    <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
 </widget>

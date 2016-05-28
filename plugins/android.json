@@ -33,7 +33,17 @@
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "fr.loicknuchel.starter.ionic"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "fr.loicknuchel.starter.ionic"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "lb.ngIonic.starter.ionic"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "fr.loicknuchel.starter.ionic"
+        }
+    }
 }
