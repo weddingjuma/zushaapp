@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app', ['ionic'])
+  angular.module('app', ['ionic', 'lbServices'])
     .config(configBlock)
     .run(runBlock);
 
@@ -15,6 +15,18 @@
       url: '/login',
       templateUrl: 'app/authentication/login.html',
       controller: 'LoginCtrl'
+    })
+    // auth logics
+    .state('signin', {
+      url: '/signin',
+      templateUrl: 'app/authentication/signin.html',
+     controller: 'SigninCtrl'
+
+    })
+    .state('register', {
+      url: '/register',
+      templateUrl: 'app/authentication/register.html',
+     controller: 'RegisterCtrl'
     })
     .state('app', {
       url: '/app',
@@ -37,6 +49,33 @@
         'menuContent': {
           templateUrl: 'app/twitts/twitt.html',
           controller: 'TwittCtrl'
+        }
+      }
+    })
+    .state('app.reports', {
+      url: '/reports',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/reports/reports.html',
+          controller: 'ReportsCtrl'
+        }
+      }
+    })
+    .state('app.report', {
+      url: '/report',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/reports/report.html',
+          controller: 'ReportCtrl'
+        }
+      }
+    })
+    .state('app.newreport', {
+      url: '/newreport',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/reports/newreport.html',
+          controller: 'ReportsCtrl'
         }
       }
     })
