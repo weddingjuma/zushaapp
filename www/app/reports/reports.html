@@ -1,10 +1,45 @@
 <ion-view title="All Reported">
   <ion-content>
-    <div class="list">
-      All Not So Caught Up!
-    </div>
-  </ion-content>
-  <button class="button button-energized-900 button-fab button-fab-bottom-right fab" ui-sref="app.newreport">
+    <ion-list>
+      <div class="list card" ng-repeat="report in reports.slice().reverse()">
+
+        <div class="item" ui-sref="app.report({id: reports.id})">
+          <!--   <img ng-src="{{notice.avatar}}"> -->
+          <h2>{{report.numberplate}}</h2>
+
+        </div>
+
+        <div class="item item-body" ui-sref="app.report({id: reports.id})">
+          <span>
+            <i class="ion-location"></i>
+            {{report.from}}
+          </span> <b> TO: <b/>
+          <span>
+            {{report.to}}
+          </span>
+
+          <!-- <p class="subdued">
+            <i class="icon ion-ios-clock"></i>
+            {{reports.startDate}}</p> -->
+        </div>
+
+        <!-- <div class="item tabs tabs-secondary tabs-icon-left">
+          <div class="tab-item" ng-click="shareNative()">
+           Share
+              <i class="icon ion-android-share-alt"></i>
+            </div>
+
+          <a class="tab-item" ui-sref="app.notice({id: notice.id})">
+            <i class="icon ion-more"></i>
+          Read More
+          </a>
+
+        </div> -->
+      </div>
+    </ion-list>
+  </div>
+</ion-content>
+<button class="button button-energized-900 button-fab button-fab-bottom-right fab" ui-sref="app.newreport">
   <i class="icon ion-edit light"></i>
 </button>
 </ion-view>

@@ -24,5 +24,8 @@
           console.log(err)
         });
     };
+    $scope.reports = Reports.find({
+    });
+console.log($scope.reports);
   }
 })();
