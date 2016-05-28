@@ -1,7 +1,7 @@
 angular.module('app.signin', ['lbServices', 'ionic'])
     .controller('SigninCtrl', function ($scope, User, $location, $ionicPopup, $ionicLoading, ionicToast) {
         if (User.getCachedCurrent()!==null) {
-           $location.path('app/twitts');
+           $location.path('app/reports');
         }
         $scope.showToast = function(){
         // <!-- ionicToast.show(message, position, stick, time); -->
@@ -61,7 +61,7 @@ angular.module('app.signin', ['lbServices', 'ionic'])
             },
             $scope.credentials,
                 function () {
-                    var next = $location.nextAfterLogin || 'app/twitts';
+                    var next = $location.nextAfterLogin || 'app/reports';
                     $location.nextAfterLogin = null;
                     $location.path(next);
                     $scope.hide();
