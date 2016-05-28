@@ -47,7 +47,7 @@ angular.module('app.register', ['lbServices', 'ionic'])
          * Redirect user to the app if already logged in
          */
         if (User.getCachedCurrent()!==null) {
-            $location.path('app/twitts');
+            $location.path('app/reports');
         }
 
         /**
@@ -71,7 +71,7 @@ angular.module('app.register', ['lbServices', 'ionic'])
                             User.login({include: 'user', rememberMe: true}, $scope.registration)
                                 .$promise
                                 .then(function (res) {
-                                    $location.path('app/twitts')
+                                    $location.path('app/reports')
                                                             $scope.hide();
                                                             $scope.showToast();
 
@@ -114,15 +114,6 @@ angular.module('app.register', ['lbServices', 'ionic'])
         $scope.goToSigin = function () {
             $location.path('signin');
         };
-// courses list
-        $scope.courses = [
-          'Bachelor of Business Administration','Bachelor of Purchasing and Supplies Management','Bachelor of Criminology and Security', 'BSc Actuarial Science', 'BSc industrial Chemistry',
-          'BSc in Leather Technology', 'BSc. In Mechanical Engineering', 'BSc. In Mechatronics Engineering', 'BSc. In Electrical and Informatics Engineering',
-           'Bachelor of Sustainable Tourism and Hospitality Management','BSc.in Computer Science', 'Bachelor of Science in Business Information Technology',  'BSc in Information Technology', 'BSc. In Mechatronics Engineering', 'BSc. in Food Science & Technology',
-           'BSc in Geospatial Information Science', 'BSc. In Geomatics and Geospatial Information Science', 'BSc. Nursing'
-        ];
-        $scope.years = [
-          1.1,1.2,2.1,3.1,3.2,4.1,4.2,5.1,5.2, 'Masters'
-        ];
+
 
     });
