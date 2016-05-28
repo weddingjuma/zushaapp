@@ -1,4 +1,4 @@
-<ion-view title="Elibrary">
+<ion-view title="Post a Report">
   <ion-content class="has-header">
     <form novalidate="double-padding novalidate" name="ReportForm">
       <div class="content item-body">
@@ -12,15 +12,19 @@
         </label>
         <label class="item item-input item-floating-label">
           <span class="input-label">From</span>
-          <input type="text" placeholder="text" ng-model="reports.from" required>
+          <input type="text" placeholder="From" ng-model="reports.from" required>
         </label>
         <label class="item item-input item-floating-label">
           <span class="input-label">To</span>
-          <input type="text" placeholder="text" ng-model="reports.to" required>
+          <input type="text" placeholder="To" ng-model="reports.to" required>
         </label>
         <label class="item item-input item-floating-label">
           <span class="input-label">Driver State</span>
-          <input type="text" placeholder="text" ng-model="reports.driverstate" required>
+          <input type="text" placeholder="Driver State" ng-model="reports.driverstate" required>
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Car State</span>
+          <input type="text" placeholder="Car State" ng-model="reports.carstate" required>
         </label>
 
       </div>
