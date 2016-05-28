@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app', ['ionic', 'lbServices'])
+  angular.module('app', ['ionic', 'lbServices', 'app.signin', 'ionic-toast', 'app.register'])
     .config(configBlock)
     .run(runBlock);
 
@@ -25,7 +25,7 @@
     })
     .state('register', {
       url: '/register',
-      templateUrl: 'app/authentication/register.html',
+      templateUrl: 'app/authentication/signup.html',
      controller: 'RegisterCtrl'
     })
     .state('app', {
