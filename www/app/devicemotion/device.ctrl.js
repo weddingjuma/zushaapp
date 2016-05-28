@@ -36,6 +36,7 @@
             var Y = result.y;
             var Z = result.z;
             var timeStamp = result.timestamp;
+            console.log(X + Y + Z + timeStamp);
           });
 
 
