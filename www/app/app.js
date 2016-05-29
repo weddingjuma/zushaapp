@@ -28,16 +28,20 @@
       templateUrl: 'app/authentication/signup.html',
      controller: 'RegisterCtrl'
     })
-    .state('profile', {
-      url: '/profile',
-      templateUrl: 'app/authentication/profile.html',
-     controller: 'ProfileCtrl'
-    })
     .state('app', {
       url: '/app',
       abstract: true,
       templateUrl: 'app/layout/layout.html',
       controller: 'LayoutCtrl'
+    })
+    .state('app.profile', {
+      url: '/profile',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/authentication/profile.html',
+          controller: 'ProfileCtrl'
+        }
+      }
     })
     .state('app.twitts', {
       url: '/twitts',
@@ -67,7 +71,7 @@
       }
     })
     .state('app.report', {
-      url: '/report',
+      url: '/reports/:id',
       views: {
         'menuContent': {
           templateUrl: 'app/reports/report.html',

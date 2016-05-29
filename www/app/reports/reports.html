@@ -3,13 +3,13 @@
     <ion-list>
       <div class="list card" ng-repeat="report in reports.slice().reverse()">
 
-        <div class="item" ui-sref="app.report({id: reports.id})">
+        <div class="item" ui-sref="app.report({id: report.id})">
           <!--   <img ng-src="{{notice.avatar}}"> -->
           <h2>{{report.numberplate}}</h2>
 
         </div>
 
-        <div class="item item-body" ui-sref="app.report({id: reports.id})">
+        <div class="item item-body" ui-sref="app.report({id: report.id})">
           <span>
             <i class="ion-location"></i>
             {{report.from}}
