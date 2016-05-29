@@ -28,6 +28,11 @@
       templateUrl: 'app/authentication/signup.html',
      controller: 'RegisterCtrl'
     })
+    .state('profile', {
+      url: '/profile',
+      templateUrl: 'app/authentication/profile.html',
+     controller: 'ProfileCtrl'
+    })
     .state('app', {
       url: '/app',
       abstract: true,
