@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app', ['ionic', 'lbServices', 'app.signin', 'ionic-toast', 'app.register'])
+  angular.module('app', ['ionic', 'lbServices', 'app.signin', 'ionic-toast', 'app.register', 'angularMoment'])
     .config(configBlock)
     .run(runBlock);
 

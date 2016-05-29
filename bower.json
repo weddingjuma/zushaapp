@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "ionic-toast": "~0.2.0",
-    "angular-resource": "~1.5.6"
+    "angular-resource": "~1.5.6",
+    "angular-moment": "~0.10.3"
   }
 }
