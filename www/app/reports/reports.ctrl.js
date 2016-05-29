@@ -3,7 +3,7 @@
   angular.module('app')
     .controller('ReportsCtrl', ReportsCtrl);
 
-  function ReportsCtrl($scope, Reports, $location, $ionicPopup) {
+  function ReportsCtrl($scope, Reports, $location, $ionicPopup, ionicToast, $state) {
     $scope.reports = {};
     $scope.showToast = function() {
       // <!-- ionicToast.show(message, position, stick, time); -->
@@ -18,15 +18,17 @@
         // console.log();
       });
     };
-    $scope.gotoreports = function() {
-      // $location.path('app.reports');
-      ui.sref('app.profile');
-    };
+    // $scope.gotoreports = function() {
+    //
+    //   $state.go(app.profile);
+    // };
     // do post
     $scope.PostReport = function() {
       $scope.showPopup();
       $scope.showToast();
-      $scope.gotoreports();
+      // $scope.gotoreports();
+      $state.go('app.profile');
+
       // $location.path('app.reports');
       Reports
         .create({
