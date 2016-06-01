@@ -10,17 +10,17 @@ Download The [App](https://github.com/denzelwamburu/zushaapp/blob/master/apk/Zus
 
 How To Zusha :
 
-1. #### Register in the registration page ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha6.png "Body")
+1. #### Register in the registration page
 
-2. #### Create A new complain and hit the Zusha! Button. ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha2.png "Body")
+2. #### Create A new complain and hit the Zusha! Button.
 
-3. #### Check the amount of Reward you have received in your profile page. ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha3.png "Body")
+3. #### Check the amount of Reward you have received in your profile page.
 
-4. #### Wait for your Reward  :yum:
+4. #### Wait for your Reward  ::yum:
 
 
 ### ScreenShots
-
+![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha6.png "Body") ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha2.png "Body") ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha3.png "Body")
 ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha4.png)
 
 Zusha Via SMS
@@ -38,8 +38,8 @@ How To Report :
 4. Wait for your Reward :)
 
 ## How-to
-![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaserver/master/pics/one.png "Body")
-![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaserver/master/pics/two.png "Sent image")
+![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaserver/master/pics/one.png "Body") ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaserver/master/pics/two.png "Sent image")
+
 
 
 
