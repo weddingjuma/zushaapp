@@ -1,21 +1,24 @@
-Reporting Via APP
+Zusha Via APP
 =====================
 
-Download The [App](https://github.com/denzelwamburu/zushaapp/blob/master/apk/Zusha.apk) and install the app.
+Download The [App](https://github.com/denzelwamburu/zushaapp/blob/master/apk/Zusha.apk) and Install the App.
 
 How To Zusha :
 
-1. Register in the registration page
-2. create A new complain and hit the Zusha! Button.
-3. Check the amount of Reward you have received in your profile page.
-4. Wait for your Reward :)
+1. #### Register in the registration page ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha6.png "Body")
 
-## How-to
-![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaserver/master/pics/one.png "Body")
-![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaserver/master/pics/two.png "Sent iamge")
+2. #### Create A new complain and hit the Zusha! Button. ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha2.png "Body")
+
+3. #### Check the amount of Reward you have received in your profile page. ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha3.png "Body")
+
+4. #### Wait for your Reward  ::yum:
 
 
-Reporting Zusha Via SMS
+### ScreenShots
+
+![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha4.png)
+
+Zusha Via SMS
 =====================
 
 Short Code : **20414**
