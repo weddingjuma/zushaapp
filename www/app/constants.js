@@ -2,7 +2,7 @@
   'use strict';
   angular.module('app')
     .constant('C', {
-      backendUrl: 'https://uwldfjsyby.localtunnel.me/api'
+      backendUrl: 'http://localhost:3000/api'
     });
 })();
 // replace with backendUrl

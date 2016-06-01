@@ -1,7 +1,7 @@
 (function(window, angular, undefined) {'use strict';
 
-// var urlBase = "http://localhost:3000/api";
-var urlBase = "https://uwldfjsyby.localtunnel.me/api";
+var urlBase = "http://localhost:3000/api";
+// var urlBase = "https://uwldfjsyby.localtunnel.me/api";
 
 
 var authHeader = 'authorization';
