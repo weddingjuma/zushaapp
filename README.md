@@ -20,8 +20,8 @@ How To Zusha :
 
 
 ### ScreenShots
-![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha6.png "Body") ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha2.png "Body") ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha3.png "Body")
-![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha4.png)
+![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha6.png "Body") ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha2.png "Body") ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha3.png "Body") ![alt text](https://raw.githubusercontent.com/denzelwamburu/zushaapp/master/pics/zusha1.png "Body")
+
 
 Zusha Via SMS
 =====================
