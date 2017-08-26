@@ -4,7 +4,7 @@
   "description": "Report and Track Any Overspeading Car on Kenyan Roads; The NTSA Way",
   "dependencies": {
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4",
+    "gulp-sass": "^3.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-minify-css": "^1.2.0",
     "gulp-rename": "^1.2.2"
@@ -12,7 +12,7 @@
   "devDependencies": {
     "bower": "^1.4.1",
     "gulp-util": "^3.0.6",
-    "shelljs": "^0.5.1"
+    "shelljs": "^0.7.8"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
