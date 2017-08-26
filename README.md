@@ -1,4 +1,6 @@
 ## Zusha
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/denzelwamburu/zushaapp.svg)](https://greenkeeper.io/)
 Report and Track Any Overspeading Car on Kenyan Roads;
 
 CrowdSourcing data for reckless driving in Kenyan Roads.
